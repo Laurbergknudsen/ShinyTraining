@@ -4,7 +4,7 @@ library(shinythemes)
 library(tidyverse)
 library(titanic)
 
-source("ShinyTraining/global.R", local = TRUE)
+source("global.R", local = TRUE)
 
 
 server <- function(input, output) {
