@@ -1,4 +1,10 @@
 library(shinydashboard)
+library(shiny)
+library(shinythemes)
+library(tidyverse)
+library(titanic)
+
+
 
 ui <- shinydashboard::dashboardPage(
     dashboardHeader(title = "Titanic"),
