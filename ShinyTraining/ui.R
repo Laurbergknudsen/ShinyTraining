@@ -57,22 +57,22 @@ ui <- shinydashboard::dashboardPage(
                 
                 fluidRow(
                     tabBox(title = "", id = "surivval", width = 12,
-                           tabPanel("Your info",
-                                    fluidRow(column(width = 8, box(title = "Your gender", status = "primary", width = 8,
+                           tabPanel("",
+                                    fluidRow(column(width = 8, box(title = "Your info", status = "primary", width = 8,
                                                                    solidHeader = TRUE, 
-                                                                   selectizeInput("gender_", "",
+                                                                   selectizeInput("gender_", "Gender:",
                                                                                   c(sex_choices)),
                                     
                                         numericInput(
                                             inputId = "age_",
-                                            label = "",
+                                            label = "Age:",
                                             value = 50,
                                             min = 1,
                                             max = 200,
                                             step = 1
                                         ),
                                     
-                                        selectizeInput("embark_", "",
+                                        selectizeInput("embark_", "Port of embarkation:",
                                                        c(embark)),
                                         submitButton(text = "Check your chances of survival")
                                     )),
