@@ -1,4 +1,8 @@
-library(shiny);library(shinydashboard);library(shinythemes);library(tidyverse);library(titanic)
+library(shinydashboard)
+library(shiny)
+library(shinythemes)
+library(tidyverse)
+library(titanic)
 
 train <- titanic::titanic_train
 test <- left_join(titanic::titanic_test,titanic::titanic_gender_model, by = c("PassengerId" = "PassengerId"))

@@ -1,6 +1,6 @@
+library(shinydashboard)
 
-
-ui <- dashboardPage(
+ui <- shinydashboard::dashboardPage(
     dashboardHeader(title = "Titanic"),
     dashboardSidebar(
     collapsed = FALSE,  
