@@ -85,7 +85,7 @@ ui <- shinydashboard::dashboardPage(
                                     
                                     ),
                                     fluidRow(
-                                        column(width = 12, box(title = "Will you survive", status = "primary", width = NULL, h1(textOutput(outputId = "survival_chance")))),
+                                        column(width = 12, box(title = "", status = "primary", width = NULL, h1(textOutput(outputId = "survival_chance")))),
                                         column(width = 12, h5("*Note model is not validated and output is generated from a very simple binomial GLM"))
                                     ))
                            
